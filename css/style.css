@@ -1,5 +1,6 @@
 * {
     color: red;
+    font-size: 30px;
 }
 
 
@@ -13,4 +14,86 @@ ul {
 
 .list-item::before {
     content: '* '
+}
+
+.list-item a:hover {
+    color: yellow;
+}
+
+input:focus {
+    border: 4px solid red;
+}
+
+ul li:first-child,
+ul li:last-child {
+    color: blue;
+}
+
+/*
+.list-item:nth-of-type(even) a {
+    color: darkcyan;
+}
+
+.list-item:nth-of-type(3n+2) a {
+    color: blueviolet;
+}
+*/
+
+.list-item:nth-child(3n+2) a {
+    color: magenta;
+}
+
+input[title] {
+    border: 6px solid yellow;
+}
+
+input[title="drugi"] {
+    border: 6px solid red;
+}
+
+input[title ~ ="opis"] {
+    border: 6px solid violet;
+}
+
+input[title*="wart"] {
+    border: 6px solid grey;
+}
+
+input[title^="pie"] {
+    border: 6px solid blue;
+}
+
+input[title$="y"] {
+    border: 6px solid green;
+}
+
+#pozycje {
+    height: 300px;
+    background-color: green;
+    position: relative;
+}
+
+#pozycje .blue {
+    background-color: blue;
+}
+
+#pozycje .red {
+    background-color: red;
+    left: 100px;
+    top: 35px;
+    position: absolute;
+    margin: 0;
+}
+
+#pozycje p {
+    color: white;
+}
+
+#main-nav {
+    position: fixed;
+    z-index: 9999999;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: limegreen;
 }

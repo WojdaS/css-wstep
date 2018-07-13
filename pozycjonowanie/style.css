@@ -1,0 +1,27 @@
+body {
+    width: 100%;
+}
+
+#conteiner {
+    border: 10px solid #666360;
+    background-color: #a6a9b6;
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.box-s {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+
+.orange {
+    background-color: #ff912e;
+    bottom: 0;
+}
+
+.grey {
+    background-color: #e4e4e4;
+    right: 0;
+}
